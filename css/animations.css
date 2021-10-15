@@ -1,46 +1,39 @@
 .wowBack {
-  background: #222;
-  position: relative;
-  overflow: hidden;
+  background:#222;
+  position:relative; overflow:hidden;
 }
-
 .wowWrap div {
-  background: #27ae60;
-  display: block;
-  width: 100%;
-  margin: 5% 0;
-  text-align: center;
-  padding-top: 20%;
-  padding-bottom: 20%;
+  background:#27ae60; 
+  display:block;
+  width:100%;
+  margin:5% 0;
+  text-align:center;
+  padding-top:20%;
+  padding-bottom:20%;
 }
 
 .wowWrap {
-  width: 16.66%;
-  float: left;
+  width:16.66%;
+  float:left;
   padding: 0 .5%;
 }
 
-.wowWrap h4 {
-  position: fixed;
-  z-index: 200;
-  width: 100%;
-  padding: 1% 0% 1% 0%;
-  margin: 0;
-  color: white;
-  font-size: 1.35vw;
-  background: rgba(22, 22, 22, .3)
+.wowWrap h4{
+  position:fixed;
+  z-index:200;
+  width:100%;
+  padding:1% 0% 1% 0%;
+  margin:0;
+  color:white;  
+  font-size:1.35vw;
+  background:rgba(22,22,22,.3)
 }
 
-.wowWrap div:first-of-type {
-  margin-top: 25%;
-}
+.wowWrap div:first-of-type{
+  margin-top:25%; }
 
 /*I've assigned class wHighlight to all the animate.css classes that add elements onto the page with delay.  */
-.wHighlight {
-  background: #28a !important
-}
-
-@charset "UTF-8";
+.wHighlight {background:#28a !important}
 
 .animated {
   animation-duration: 1s;
@@ -63,29 +56,23 @@
 }
 
 @keyframes bounce {
-  
-  from,
-  20%,
-  53%,
-  80%,
-  to {
+  from, 20%, 53%, 80%, to {
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(0,0,0);
   }
-  
-  40%,
-  43% {
+
+  40%, 43% {
     animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
     transform: translate3d(0, -30px, 0);
   }
-  
+
   70% {
     animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
     transform: translate3d(0, -15px, 0);
   }
-  
+
   90% {
-    transform: translate3d(0, -4px, 0);
+    transform: translate3d(0,-4px,0);
   }
 }
 
@@ -95,15 +82,11 @@
 }
 
 @keyframes flash {
-  
-  from,
-  50%,
-  to {
+  from, 50%, to {
     opacity: 1;
   }
-  
-  25%,
-  75% {
+
+  25%, 75% {
     opacity: 0;
   }
 }
@@ -118,11 +101,11 @@
   from {
     transform: scale3d(1, 1, 1);
   }
-  
+
   50% {
     transform: scale3d(1.05, 1.05, 1.05);
   }
-  
+
   to {
     transform: scale3d(1, 1, 1);
   }
@@ -136,27 +119,27 @@
   from {
     transform: scale3d(1, 1, 1);
   }
-  
+
   30% {
     transform: scale3d(1.25, 0.75, 1);
   }
-  
+
   40% {
     transform: scale3d(0.75, 1.25, 1);
   }
-  
+
   50% {
     transform: scale3d(1.15, 0.85, 1);
   }
-  
+
   65% {
     transform: scale3d(.95, 1.05, 1);
   }
-  
+
   75% {
     transform: scale3d(1.05, .95, 1);
   }
-  
+
   to {
     transform: scale3d(1, 1, 1);
   }
@@ -167,24 +150,15 @@
 }
 
 @keyframes shake {
-  
-  from,
-  to {
+  from, to {
     transform: translate3d(0, 0, 0);
   }
-  
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
+
+  10%, 30%, 50%, 70%, 90% {
     transform: translate3d(-10px, 0, 0);
   }
-  
-  20%,
-  40%,
-  60%,
-  80% {
+
+  20%, 40%, 60%, 80% {
     transform: translate3d(10px, 0, 0);
   }
 }
@@ -197,23 +171,23 @@
   0% {
     transform: translateX(0);
   }
-  
+
   6.5% {
     transform: translateX(-6px) rotateY(-9deg);
   }
-  
+
   18.5% {
     transform: translateX(5px) rotateY(7deg);
   }
-  
+
   31.5% {
     transform: translateX(-3px) rotateY(-5deg);
   }
-  
+
   43.5% {
     transform: translateX(2px) rotateY(3deg);
   }
-  
+
   50% {
     transform: translateX(0);
   }
@@ -228,19 +202,19 @@
   20% {
     transform: rotate3d(0, 0, 1, 15deg);
   }
-  
+
   40% {
     transform: rotate3d(0, 0, 1, -10deg);
   }
-  
+
   60% {
     transform: rotate3d(0, 0, 1, 5deg);
   }
-  
+
   80% {
     transform: rotate3d(0, 0, 1, -5deg);
   }
-  
+
   to {
     transform: rotate3d(0, 0, 1, 0deg);
   }
@@ -255,25 +229,19 @@
   from {
     transform: scale3d(1, 1, 1);
   }
-  
-  10%,
-  20% {
+
+  10%, 20% {
     transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
   }
-  
-  30%,
-  50%,
-  70%,
-  90% {
+
+  30%, 50%, 70%, 90% {
     transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
   }
-  
-  40%,
-  60%,
-  80% {
+
+  40%, 60%, 80% {
     transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
   }
-  
+
   to {
     transform: scale3d(1, 1, 1);
   }
@@ -289,27 +257,27 @@
   from {
     transform: none;
   }
-  
+
   15% {
     transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
   }
-  
+
   30% {
     transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
   }
-  
+
   45% {
     transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
   }
-  
+
   60% {
     transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
   }
-  
+
   75% {
     transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
   }
-  
+
   to {
     transform: none;
   }
@@ -320,37 +288,34 @@
 }
 
 @keyframes jello {
-  
-  from,
-  11.1%,
-  to {
+  from, 11.1%, to {
     transform: none;
   }
-  
+
   22.2% {
     transform: skewX(-12.5deg) skewY(-12.5deg);
   }
-  
+
   33.3% {
     transform: skewX(6.25deg) skewY(6.25deg);
   }
-  
+
   44.4% {
     transform: skewX(-3.125deg) skewY(-3.125deg);
   }
-  
+
   55.5% {
     transform: skewX(1.5625deg) skewY(1.5625deg);
   }
-  
+
   66.6% {
     transform: skewX(-0.78125deg) skewY(-0.78125deg);
   }
-  
+
   77.7% {
     transform: skewX(0.390625deg) skewY(0.390625deg);
   }
-  
+
   88.8% {
     transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
   }
@@ -362,38 +327,32 @@
 }
 
 @keyframes bounceIn {
-  
-  from,
-  20%,
-  40%,
-  60%,
-  80%,
-  to {
+  from, 20%, 40%, 60%, 80%, to {
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
   }
-  
+
   0% {
     opacity: 0;
     transform: scale3d(.3, .3, .3);
   }
-  
+
   20% {
     transform: scale3d(1.1, 1.1, 1.1);
   }
-  
+
   40% {
     transform: scale3d(.9, .9, .9);
   }
-  
+
   60% {
     opacity: 1;
     transform: scale3d(1.03, 1.03, 1.03);
   }
-  
+
   80% {
     transform: scale3d(.97, .97, .97);
   }
-  
+
   to {
     opacity: 1;
     transform: scale3d(1, 1, 1);
@@ -405,33 +364,28 @@
 }
 
 @keyframes bounceInDown {
-  
-  from,
-  60%,
-  75%,
-  90%,
-  to {
+  from, 60%, 75%, 90%, to {
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
   }
-  
+
   0% {
     opacity: 0;
     transform: translate3d(0, -3000px, 0);
   }
-  
+
   60% {
     opacity: 1;
     transform: translate3d(0, 25px, 0);
   }
-  
+
   75% {
     transform: translate3d(0, -10px, 0);
   }
-  
+
   90% {
     transform: translate3d(0, 5px, 0);
   }
-  
+
   to {
     transform: none;
   }
@@ -442,33 +396,28 @@
 }
 
 @keyframes bounceInLeft {
-  
-  from,
-  60%,
-  75%,
-  90%,
-  to {
+  from, 60%, 75%, 90%, to {
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
   }
-  
+
   0% {
     opacity: 0;
     transform: translate3d(-3000px, 0, 0);
   }
-  
+
   60% {
     opacity: 1;
     transform: translate3d(25px, 0, 0);
   }
-  
+
   75% {
     transform: translate3d(-10px, 0, 0);
   }
-  
+
   90% {
     transform: translate3d(5px, 0, 0);
   }
-  
+
   to {
     transform: none;
   }
@@ -479,33 +428,28 @@
 }
 
 @keyframes bounceInRight {
-  
-  from,
-  60%,
-  75%,
-  90%,
-  to {
+  from, 60%, 75%, 90%, to {
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
   }
-  
+
   from {
     opacity: 0;
     transform: translate3d(3000px, 0, 0);
   }
-  
+
   60% {
     opacity: 1;
     transform: translate3d(-25px, 0, 0);
   }
-  
+
   75% {
     transform: translate3d(10px, 0, 0);
   }
-  
+
   90% {
     transform: translate3d(-5px, 0, 0);
   }
-  
+
   to {
     transform: none;
   }
@@ -516,33 +460,28 @@
 }
 
 @keyframes bounceInUp {
-  
-  from,
-  60%,
-  75%,
-  90%,
-  to {
+  from, 60%, 75%, 90%, to {
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
   }
-  
+
   from {
     opacity: 0;
     transform: translate3d(0, 3000px, 0);
   }
-  
+
   60% {
     opacity: 1;
     transform: translate3d(0, -20px, 0);
   }
-  
+
   75% {
     transform: translate3d(0, 10px, 0);
   }
-  
+
   90% {
     transform: translate3d(0, -5px, 0);
   }
-  
+
   to {
     transform: translate3d(0, 0, 0);
   }
@@ -556,13 +495,12 @@
   20% {
     transform: scale3d(.9, .9, .9);
   }
-  
-  50%,
-  55% {
+
+  50%, 55% {
     opacity: 1;
     transform: scale3d(1.1, 1.1, 1.1);
   }
-  
+
   to {
     opacity: 0;
     transform: scale3d(.3, .3, .3);
@@ -577,13 +515,12 @@
   20% {
     transform: translate3d(0, 10px, 0);
   }
-  
-  40%,
-  45% {
+
+  40%, 45% {
     opacity: 1;
     transform: translate3d(0, -20px, 0);
   }
-  
+
   to {
     opacity: 0;
     transform: translate3d(0, 2000px, 0);
@@ -599,7 +536,7 @@
     opacity: 1;
     transform: translate3d(20px, 0, 0);
   }
-  
+
   to {
     opacity: 0;
     transform: translate3d(-2000px, 0, 0);
@@ -615,7 +552,7 @@
     opacity: 1;
     transform: translate3d(-20px, 0, 0);
   }
-  
+
   to {
     opacity: 0;
     transform: translate3d(2000px, 0, 0);
@@ -630,13 +567,12 @@
   20% {
     transform: translate3d(0, -10px, 0);
   }
-  
-  40%,
-  45% {
+
+  40%, 45% {
     opacity: 1;
     transform: translate3d(0, 20px, 0);
   }
-  
+
   to {
     opacity: 0;
     transform: translate3d(0, -2000px, 0);
@@ -651,7 +587,7 @@
   from {
     opacity: 0;
   }
-  
+
   to {
     opacity: 1;
   }
@@ -666,7 +602,7 @@
     opacity: 0;
     transform: translate3d(0, -100%, 0);
   }
-  
+
   to {
     opacity: 1;
     transform: none;
@@ -682,7 +618,7 @@
     opacity: 0;
     transform: translate3d(0, -2000px, 0);
   }
-  
+
   to {
     opacity: 1;
     transform: none;
@@ -698,7 +634,7 @@
     opacity: 0;
     transform: translate3d(-200px, 0, 0);
   }
-  
+
   to {
     opacity: 1;
     transform: none;
@@ -714,7 +650,7 @@
     opacity: 0;
     transform: translate3d(-2000px, 0, 0);
   }
-  
+
   to {
     opacity: 1;
     transform: none;
@@ -730,7 +666,7 @@
     opacity: 0;
     transform: translate3d(200px, 0, 0);
   }
-  
+
   to {
     opacity: 1;
     transform: none;
@@ -746,7 +682,7 @@
     opacity: 0;
     transform: translate3d(2000px, 0, 0);
   }
-  
+
   to {
     opacity: 1;
     transform: none;
@@ -762,7 +698,7 @@
     opacity: 0;
     transform: translate3d(0, 100%, 0);
   }
-  
+
   to {
     opacity: 1;
     transform: none;
@@ -778,7 +714,7 @@
     opacity: 0;
     transform: translate3d(0, 2000px, 0);
   }
-  
+
   to {
     opacity: 1;
     transform: none;
@@ -793,7 +729,7 @@
   from {
     opacity: 1;
   }
-  
+
   to {
     opacity: 0;
   }
@@ -807,7 +743,7 @@
   from {
     opacity: 1;
   }
-  
+
   to {
     opacity: 0;
     transform: translate3d(0, 100%, 0);
@@ -822,7 +758,7 @@
   from {
     opacity: 1;
   }
-  
+
   to {
     opacity: 0;
     transform: translate3d(0, 2000px, 0);
@@ -837,7 +773,7 @@
   from {
     opacity: 1;
   }
-  
+
   to {
     opacity: 0;
     transform: translate3d(-100%, 0, 0);
@@ -852,7 +788,7 @@
   from {
     opacity: 1;
   }
-  
+
   to {
     opacity: 0;
     transform: translate3d(-2000px, 0, 0);
@@ -867,7 +803,7 @@
   from {
     opacity: 1;
   }
-  
+
   to {
     opacity: 0;
     transform: translate3d(100%, 0, 0);
@@ -882,7 +818,7 @@
   from {
     opacity: 1;
   }
-  
+
   to {
     opacity: 0;
     transform: translate3d(2000px, 0, 0);
@@ -897,7 +833,7 @@
   from {
     opacity: 1;
   }
-  
+
   to {
     opacity: 0;
     transform: translate3d(0, -100%, 0);
@@ -912,7 +848,7 @@
   from {
     opacity: 1;
   }
-  
+
   to {
     opacity: 0;
     transform: translate3d(0, -2000px, 0);
@@ -928,22 +864,22 @@
     transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
     animation-timing-function: ease-out;
   }
-  
+
   40% {
     transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
     animation-timing-function: ease-out;
   }
-  
+
   50% {
     transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
     animation-timing-function: ease-in;
   }
-  
+
   80% {
     transform: perspective(400px) scale3d(.95, .95, .95);
     animation-timing-function: ease-in;
   }
-  
+
   to {
     transform: perspective(400px);
     animation-timing-function: ease-in;
@@ -962,21 +898,21 @@
     animation-timing-function: ease-in;
     opacity: 0;
   }
-  
+
   40% {
     transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
     animation-timing-function: ease-in;
   }
-  
+
   60% {
     transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
     opacity: 1;
   }
-  
+
   80% {
     transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
   }
-  
+
   to {
     transform: perspective(400px);
   }
@@ -994,21 +930,21 @@
     animation-timing-function: ease-in;
     opacity: 0;
   }
-  
+
   40% {
     transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
     animation-timing-function: ease-in;
   }
-  
+
   60% {
     transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
     opacity: 1;
   }
-  
+
   80% {
     transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
   }
-  
+
   to {
     transform: perspective(400px);
   }
@@ -1024,12 +960,12 @@
   from {
     transform: perspective(400px);
   }
-  
+
   30% {
     transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
     opacity: 1;
   }
-  
+
   to {
     transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
     opacity: 0;
@@ -1046,12 +982,12 @@
   from {
     transform: perspective(400px);
   }
-  
+
   30% {
     transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
     opacity: 1;
   }
-  
+
   to {
     transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
     opacity: 0;
@@ -1069,17 +1005,17 @@
     transform: translate3d(100%, 0, 0) skewX(-30deg);
     opacity: 0;
   }
-  
+
   60% {
     transform: skewX(20deg);
     opacity: 1;
   }
-  
+
   80% {
     transform: skewX(-5deg);
     opacity: 1;
   }
-  
+
   to {
     transform: none;
     opacity: 1;
@@ -1095,7 +1031,7 @@
   from {
     opacity: 1;
   }
-  
+
   to {
     transform: translate3d(100%, 0, 0) skewX(30deg);
     opacity: 0;
@@ -1113,7 +1049,7 @@
     transform: rotate3d(0, 0, 1, -200deg);
     opacity: 0;
   }
-  
+
   to {
     transform-origin: center;
     transform: none;
@@ -1131,7 +1067,7 @@
     transform: rotate3d(0, 0, 1, -45deg);
     opacity: 0;
   }
-  
+
   to {
     transform-origin: left bottom;
     transform: none;
@@ -1149,7 +1085,7 @@
     transform: rotate3d(0, 0, 1, 45deg);
     opacity: 0;
   }
-  
+
   to {
     transform-origin: right bottom;
     transform: none;
@@ -1167,7 +1103,7 @@
     transform: rotate3d(0, 0, 1, 45deg);
     opacity: 0;
   }
-  
+
   to {
     transform-origin: left bottom;
     transform: none;
@@ -1185,7 +1121,7 @@
     transform: rotate3d(0, 0, 1, -90deg);
     opacity: 0;
   }
-  
+
   to {
     transform-origin: right bottom;
     transform: none;
@@ -1202,7 +1138,7 @@
     transform-origin: center;
     opacity: 1;
   }
-  
+
   to {
     transform-origin: center;
     transform: rotate3d(0, 0, 1, 200deg);
@@ -1219,7 +1155,7 @@
     transform-origin: left bottom;
     opacity: 1;
   }
-  
+
   to {
     transform-origin: left bottom;
     transform: rotate3d(0, 0, 1, 45deg);
@@ -1236,7 +1172,7 @@
     transform-origin: right bottom;
     opacity: 1;
   }
-  
+
   to {
     transform-origin: right bottom;
     transform: rotate3d(0, 0, 1, -45deg);
@@ -1253,7 +1189,7 @@
     transform-origin: left bottom;
     opacity: 1;
   }
-  
+
   to {
     transform-origin: left bottom;
     transform: rotate3d(0, 0, 1, -45deg);
@@ -1270,7 +1206,7 @@
     transform-origin: right bottom;
     opacity: 1;
   }
-  
+
   to {
     transform-origin: right bottom;
     transform: rotate3d(0, 0, 1, 90deg);
@@ -1287,22 +1223,20 @@
     transform-origin: top left;
     animation-timing-function: ease-in-out;
   }
-  
-  20%,
-  60% {
+
+  20%, 60% {
     transform: rotate3d(0, 0, 1, 80deg);
     transform-origin: top left;
     animation-timing-function: ease-in-out;
   }
-  
-  40%,
-  80% {
+
+  40%, 80% {
     transform: rotate3d(0, 0, 1, 60deg);
     transform-origin: top left;
     animation-timing-function: ease-in-out;
     opacity: 1;
   }
-  
+
   to {
     transform: translate3d(0, 700px, 0);
     opacity: 0;
@@ -1319,15 +1253,15 @@
     transform: scale(0.1) rotate(30deg);
     transform-origin: center bottom;
   }
-  
+
   50% {
     transform: rotate(-10deg);
   }
-  
+
   70% {
     transform: rotate(3deg);
   }
-  
+
   to {
     opacity: 1;
     transform: scale(1);
@@ -1345,7 +1279,7 @@
     opacity: 0;
     transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
   }
-  
+
   to {
     opacity: 1;
     transform: none;
@@ -1362,7 +1296,7 @@
   from {
     opacity: 1;
   }
-  
+
   to {
     opacity: 0;
     transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
@@ -1378,7 +1312,7 @@
     opacity: 0;
     transform: scale3d(.3, .3, .3);
   }
-  
+
   50% {
     opacity: 1;
   }
@@ -1394,7 +1328,7 @@
     transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
     animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
   }
-  
+
   60% {
     opacity: 1;
     transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
@@ -1412,7 +1346,7 @@
     transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
     animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
   }
-  
+
   60% {
     opacity: 1;
     transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
@@ -1430,7 +1364,7 @@
     transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
     animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
   }
-  
+
   60% {
     opacity: 1;
     transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
@@ -1448,7 +1382,7 @@
     transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
     animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
   }
-  
+
   60% {
     opacity: 1;
     transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
@@ -1464,12 +1398,12 @@
   from {
     opacity: 1;
   }
-  
+
   50% {
     opacity: 0;
     transform: scale3d(.3, .3, .3);
   }
-  
+
   to {
     opacity: 0;
   }
@@ -1485,7 +1419,7 @@
     transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
     animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
   }
-  
+
   to {
     opacity: 0;
     transform: scale3d(.1, .1, .1) translate3d(0, 2000px, 0);
@@ -1503,7 +1437,7 @@
     opacity: 1;
     transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0);
   }
-  
+
   to {
     opacity: 0;
     transform: scale(.1) translate3d(-2000px, 0, 0);
@@ -1520,7 +1454,7 @@
     opacity: 1;
     transform: scale3d(.475, .475, .475) translate3d(-42px, 0, 0);
   }
-  
+
   to {
     opacity: 0;
     transform: scale(.1) translate3d(2000px, 0, 0);
@@ -1538,7 +1472,7 @@
     transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
     animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
   }
-  
+
   to {
     opacity: 0;
     transform: scale3d(.1, .1, .1) translate3d(0, -2000px, 0);
@@ -1556,7 +1490,7 @@
     transform: translate3d(0, -100%, 0);
     visibility: visible;
   }
-  
+
   to {
     transform: translate3d(0, 0, 0);
   }
@@ -1571,7 +1505,7 @@
     transform: translate3d(-100%, 0, 0);
     visibility: visible;
   }
-  
+
   to {
     transform: translate3d(0, 0, 0);
   }
@@ -1586,7 +1520,7 @@
     transform: translate3d(100%, 0, 0);
     visibility: visible;
   }
-  
+
   to {
     transform: translate3d(0, 0, 0);
   }
@@ -1601,7 +1535,7 @@
     transform: translate3d(0, 100%, 0);
     visibility: visible;
   }
-  
+
   to {
     transform: translate3d(0, 0, 0);
   }
@@ -1615,7 +1549,7 @@
   from {
     transform: translate3d(0, 0, 0);
   }
-  
+
   to {
     visibility: hidden;
     transform: translate3d(0, 100%, 0);
@@ -1630,7 +1564,7 @@
   from {
     transform: translate3d(0, 0, 0);
   }
-  
+
   to {
     visibility: hidden;
     transform: translate3d(-100%, 0, 0);
@@ -1645,7 +1579,7 @@
   from {
     transform: translate3d(0, 0, 0);
   }
-  
+
   to {
     visibility: hidden;
     transform: translate3d(100%, 0, 0);
@@ -1660,7 +1594,7 @@
   from {
     transform: translate3d(0, 0, 0);
   }
-  
+
   to {
     visibility: hidden;
     transform: translate3d(0, -100%, 0);
